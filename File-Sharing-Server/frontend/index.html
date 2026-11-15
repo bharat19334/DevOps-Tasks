@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileFlow | File Sharing</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">FileFlow<span>.</span></a>
+        <div class="server-status">
+            <span class="status-dot"></span>
+            Server Connected
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="page-heading">
+            <div>
+                <p class="eyebrow">FILE MANAGEMENT</p>
+                <h1>File Sharing Dashboard</h1>
+                <p class="subtitle">Upload, manage and download your files securely.</p>
+            </div>
+        </section>
+
+        <section class="upload-card">
+            <div class="section-heading">
+                <h2>Upload Files</h2>
+                <p>Share your files in just a few clicks.</p>
+            </div>
+
+            <label for="fileInput" class="upload-area">
+                <div class="upload-icon">↑</div>
+                <h3>Drop your file here</h3>
+                <p>or <span>browse files</span> from your device</p>
+                <small>Choose a file to get started</small>
+            </label>
+
+            <input type="file" id="fileInput">
+
+            <div id="fileInfo" class="file-info">No file selected</div>
+
+            <button id="uploadBtn" class="primary-btn">
+                Upload File
+            </button>
+
+            <p id="message" class="message"></p>
+        </section>
+
+        <section class="files-card">
+            <div class="files-heading">
+                <div>
+                    <h2>Uploaded Files</h2>
+                    <p>Manage your uploaded documents.</p>
+                </div>
+
+                <button id="refreshBtn" class="secondary-btn">
+                    ↻ Refresh
+                </button>
+            </div>
+
+            <div id="fileList" class="file-list">
+                <div class="empty-state">Loading files...</div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

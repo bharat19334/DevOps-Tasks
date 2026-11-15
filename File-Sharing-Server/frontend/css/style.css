@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f3f6f5;
+    color: #263b38;
+    min-height: 100vh;
+}
+
+.navbar {
+    height: 75px;
+    background: #ffffff;
+    border-bottom: 1px solid #e8eeeb;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #205f50;
+    font-size: 25px;
+    font-weight: 750;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #d69b60;
+}
+
+.server-status {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #648078;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #32ad79;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 55px auto;
+    padding: 0 22px;
+}
+
+.page-heading {
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: #b17a47;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 9px;
+}
+
+.subtitle,
+.section-heading p,
+.files-heading p {
+    color: #81908c;
+    font-size: 14px;
+}
+
+.upload-card,
+.files-card {
+    background: #ffffff;
+    border: 1px solid #e7eeeb;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 30px rgba(32, 75, 62, 0.04);
+}
+
+.section-heading {
+    margin-bottom: 23px;
+}
+
+.section-heading h2,
+.files-heading h2 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 210px;
+    border: 2px dashed #b8d2c9;
+    border-radius: 12px;
+    background: #f8fbf9;
+    cursor: pointer;
+    text-align: center;
+    padding: 25px;
+    transition: 0.2s;
+}
+
+.upload-area:hover {
+    background: #f0f7f3;
+    border-color: #408b72;
+}
+
+.upload-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: #e3f0e9;
+    color: #286d58;
+    font-size: 30px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 14px;
+}
+
+.upload-area h3 {
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.upload-area p {
+    color: #83928d;
+    font-size: 14px;
+}
+
+.upload-area p span {
+    color: #28745d;
+    font-weight: 700;
+}
+
+.upload-area small {
+    color: #a1aaa6;
+    margin-top: 12px;
+}
+
+#fileInput {
+    display: none;
+}
+
+.file-info {
+    margin: 15px 0;
+    color: #657a72;
+    font-size: 13px;
+}
+
+.primary-btn,
+.secondary-btn,
+.download-btn,
+.delete-btn {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.primary-btn {
+    background: #286d58;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #1f5848;
+}
+
+.secondary-btn {
+    background: #eaf3ee;
+    color: #286d58;
+}
+
+.files-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.file-row {
+    border-top: 1px solid #edf1ef;
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.file-name {
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.file-size {
+    color: #899791;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.file-actions {
+    display: flex;
+    gap: 9px;
+}
+
+.download-btn {
+    background: #e8f3ed;
+    color: #286d58;
+}
+
+.delete-btn {
+    background: #fff0ec;
+    color: #c45b4d;
+}
+
+.empty-state {
+    text-align: center;
+    color: #8b9993;
+    padding: 35px 10px;
+}
+
+.message {
+    margin-top: 13px;
+    font-size: 13px;
+    color: #286d58;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .container {
+        margin: 35px auto;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .upload-card,
+    .files-card {
+        padding: 20px;
+    }
+
+    .file-row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
