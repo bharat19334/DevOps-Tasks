@@ -1,0 +1,49 @@
+/* ===== Poore page ka basic look ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #eef1f5;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* ===== Chat ka main dabba ===== */
+.chat-box {
+  width: 420px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+}
+
+h2 { margin: 0 0 8px; text-align: center; }
+
+/* Connection status (green = connected, red = band) */
+#status { text-align: center; font-size: 13px; margin-bottom: 10px; color: gray; }
+#status.online  { color: green; }
+#status.offline { color: red; }
+
+/* ===== Messages ki list ===== */
+#messages {
+  height: 320px;
+  overflow-y: auto;          /* zyada messages ho to scroll ho */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Har message ka bubble */
+.msg { padding: 6px 10px; border-radius: 10px; max-width: 80%; word-wrap: break-word; }
+.msg small { display: block; font-size: 10px; opacity: 0.7; }
+.msg.other  { background: #e9e9eb; align-self: flex-start; }   /* dusron ke msg: left */
+.msg.me     { background: #0b93f6; color: white; align-self: flex-end; } /* mere msg: right */
+.msg.system { background: none; color: gray; font-size: 12px; align-self: center; }
+
+/* ===== Message likhne ka form ===== */
+#chat-form { display: flex; gap: 8px; margin-top: 10px; }
+#message-input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+button { padding: 10px 16px; border: none; background: #0b93f6; color: white; border-radius: 8px; cursor: pointer; }
+button:hover { background: #0877cc; }

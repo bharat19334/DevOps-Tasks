@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebSocket Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-box">
+    <h2>Real-Time Chat</h2>
+    <div id="status">Connecting...</div>
+
+    <!-- Yahan saare messages dikhenge -->
+    <div id="messages"></div>
+
+    <!-- Message likhne ka form -->
+    <form id="chat-form">
+      <input id="message-input" type="text" placeholder="Message likho..." autocomplete="off" required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
