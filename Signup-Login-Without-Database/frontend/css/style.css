@@ -1,0 +1,254 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #f3f6f8;
+    color: #243447;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 40px;
+    background: white;
+    border: 1px solid #e5ebf0;
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(33, 52, 72, 0.08);
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: 800;
+    color: #2869b2;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.brand span {
+    color: #e29a55;
+}
+
+.auth-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-heading h1 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.auth-heading p {
+    color: #84919e;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 19px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 650;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 49px;
+    padding: 0 14px;
+    border: 1px solid #dce4ea;
+    border-radius: 9px;
+    outline: none;
+    font-size: 14px;
+    background: #fbfcfd;
+    color: #243447;
+}
+
+.form-group input:focus {
+    border-color: #397bc4;
+    box-shadow: 0 0 0 3px rgba(57, 123, 196, 0.10);
+}
+
+.primary-btn {
+    width: 100%;
+    height: 49px;
+    border: none;
+    border-radius: 9px;
+    background: #2869b2;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.primary-btn:hover {
+    background: #205993;
+}
+
+.primary-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.auth-footer {
+    text-align: center;
+    color: #778694;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.auth-footer a {
+    color: #2869b2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.message {
+    font-size: 13px;
+    margin: 12px 0;
+    color: #c34f45;
+    min-height: 18px;
+}
+
+.navbar {
+    height: 75px;
+    padding: 0 8%;
+    background: white;
+    border-bottom: 1px solid #e6ebef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .brand {
+    margin: 0;
+    text-align: left;
+}
+
+.logout-btn {
+    background: #fff0ed;
+    color: #c34f45;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.dashboard-container {
+    max-width: 1000px;
+    margin: 55px auto;
+    padding: 0 22px;
+}
+
+.welcome-card {
+    background: white;
+    border: 1px solid #e6ebef;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    color: #cf9359;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 750;
+    margin-bottom: 12px;
+}
+
+.welcome-card h1 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.welcome-card p:last-child {
+    color: #84919e;
+}
+
+.profile-card,
+.security-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    border: 1px solid #e6ebef;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.profile-icon,
+.security-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    font-size: 23px;
+    font-weight: 750;
+    background: #e9f1fa;
+    color: #2869b2;
+}
+
+.security-icon {
+    background: #e5f5ed;
+    color: #29966a;
+}
+
+.profile-card h2,
+.security-card h3 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.profile-card p,
+.security-card p {
+    color: #778694;
+    font-size: 14px;
+}
+
+.muted {
+    margin-top: 6px;
+}
+
+@media(max-width: 500px) {
+    .auth-card {
+        padding: 28px 22px;
+    }
+
+    .dashboard-container {
+        margin-top: 30px;
+    }
+
+    .welcome-card {
+        padding: 25px;
+    }
+
+    .welcome-card h1 {
+        font-size: 22px;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+}

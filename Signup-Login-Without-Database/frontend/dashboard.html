@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | AuthFlow</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="/dashboard" class="brand">Auth<span>Flow.</span></a>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+    </header>
+
+    <main class="dashboard-container">
+
+        <section class="welcome-card">
+            <p class="eyebrow">YOUR WORKSPACE</p>
+            <h1>Welcome to your Dashboard</h1>
+            <p>You are successfully authenticated.</p>
+        </section>
+
+        <section class="profile-card">
+            <div class="profile-icon">U</div>
+
+            <div>
+                <h2>Account Information</h2>
+                <p id="userEmail">Loading...</p>
+                <p id="userCreated" class="muted"></p>
+            </div>
+        </section>
+
+        <section class="security-card">
+            <div class="security-icon">✓</div>
+            <div>
+                <h3>Authentication Active</h3>
+                <p>Your protected profile API was accessed successfully.</p>
+            </div>
+        </section>
+
+        <p id="dashboardMessage" class="message"></p>
+
+    </main>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

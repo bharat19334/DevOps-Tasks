@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | AuthFlow</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <main class="auth-container">
+        <section class="auth-card">
+
+            <div class="brand">Auth<span>Flow.</span></div>
+
+            <div class="auth-heading">
+                <h1>Create Account</h1>
+                <p>Get started by creating your account</p>
+            </div>
+
+            <form id="signupForm">
+
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Minimum 8 characters"
+                        required
+                        minlength="8"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Enter password again"
+                        required
+                        minlength="8"
+                    >
+                </div>
+
+                <p id="signupMessage" class="message"></p>
+
+                <button type="submit" id="signupBtn" class="primary-btn">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p class="auth-footer">
+                Already registered?
+                <a href="/">Sign in</a>
+            </p>
+
+        </section>
+    </main>
+
+    <script src="/static/js/auth.js"></script>
+</body>
+</html>
