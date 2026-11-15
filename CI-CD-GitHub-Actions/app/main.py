@@ -1,5 +1,6 @@
 
-from fastapi import FastAPI
+from app.main import app
+from fastapi.testclient import TestClient
 
 app = FastAPI(
     title="DevOps CI/CD Demo",
